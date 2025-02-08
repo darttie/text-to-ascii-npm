@@ -1,0 +1,16 @@
+{
+    "name": "text-banner-cli",
+    "version": "1.0.0",
+    "description": "A simple CLI tool to generate ASCII banners using Figlet",
+    "bin": {
+      "text-banner": "./bin/index.js"
+    },
+    "dependencies": {
+      "figlet": "^1.5.2"
+    },
+    "scripts": {
+      "start": "node bin/index.js"
+    },
+    "author": "Your Name",
+    "license": "MIT"
+  }
