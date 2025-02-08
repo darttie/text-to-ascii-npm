@@ -1,11 +1,11 @@
 import figlet from "figlet";
 
-export function createBanner(text) {
-  figlet(text, (err, data) => {
-    if (err) {
-      console.error("Error generating banner");
-      process.exit(1);
-    }
-    console.log(data);
-  });
+
+export function createBanner(text, fontStyle = "Standard", color = "blue") {
+    return figlet.textSync(text, { font: fontStyle });
+  }
+
+
+export function listFonts() {
+    console.log(`Available Fonts:\n${figlet.fontsSync().join(", ")}`)
 }

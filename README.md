@@ -8,4 +8,7 @@ npm install -g text-banner-cli
 
 ## Usage 
 
-text-banner "Hello, World!"
+text-banner <text> [--font <font name>] [--color <color name>] [--output <filemane>]
+
+to get fonts use: 
+text-banner --list-fonts
